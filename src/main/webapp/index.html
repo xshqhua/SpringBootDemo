@@ -161,17 +161,8 @@
 </head>
 
 <body>
-<script type="text/javascript">
-        function xx(){
-            var input_pwd= document.getElementById('input_pwd');
-            var md5_pwd= document.getElementById('md5_pwd');
-             md5_pwd.value= toMD5(input_pwd.value);
-            alert('000')
-        }
-</script>
 <div class="header" id="head">
     <div class="title">智能在线人脸识别系统</div>
-
 </div>
 
 <div class="wrap" id="wrap">
@@ -192,7 +183,7 @@
                    placeholder="输入用户密码"/>
         </div>
         <div class="logC">
-            <a href="" onclick="xx()">
+            <a href="checkUserName.do" target="_self">
                 <button>登 录</button>
             </a>
         </div>

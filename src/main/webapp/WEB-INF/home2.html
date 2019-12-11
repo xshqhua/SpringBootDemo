@@ -12,11 +12,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script>
-        function goRegister(){
-            location.href="dispatcher!checkUserName.do";
-        }
-    </script>
     <!-- CSS样式 -->
     <style type="text/css">
         .container div{
@@ -33,9 +28,7 @@
     <div ><button type="button" class="btn btn-primary btn-lg btn-block" disabled="disabled" οnclick="location=''">我要租赁汽车</button></div>
     <div ><a href="http://www.baidu.com" target="_blank">公司新闻</a></div >
     <div ><a href="" target="_blank">公司新闻</a></div >
-    <a href="dispatcher!checkUserName.do">去注册</a>
-    <div ><button type="button" class="btn btn-primary btn-lg btn-block" disabled="disabled" οnclick="goRegister()">我要租赁汽车</button></div>
-
+    ${msg}
 </div>
 </body>
 </html>
