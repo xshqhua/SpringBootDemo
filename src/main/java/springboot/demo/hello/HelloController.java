@@ -8,14 +8,11 @@
  **/
 package springboot.demo.hello;
 
-import org.thymeleaf.expression.Lists;
-import org.thymeleaf.expression.Maps;
-
 import java.util.*;
 
 public class HelloController {
     public static void main(String[] args) {
-        int[] nums = new int[]{22, 22, 11, 22, 21,12};
+        int[] nums = new int[]{22, 22, 11, 22, 21, 12};
         HelloController helloController = new HelloController();
         System.out.println(Arrays.toString(helloController.yy(nums, 44)));
     }
@@ -37,12 +34,13 @@ public class HelloController {
 //        System.out.println(map);
         return null;
     }
+
     public int[] yy(int[] nums, int target) {
-        List list=new ArrayList<>();
-        int[] t=new int[nums.length];
+        List list = new ArrayList<>();
+        int[] t = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            for (int j = i+1; j < nums.length; j++) {
-                if(target==(nums[i]+nums[j])){
+            for (int j = i + 1; j < nums.length; j++) {
+                if (target == (nums[i] + nums[j])) {
                     Map<Integer, Integer> map = new HashMap<>();
                     map.put(nums[i], i);
                     map.put(nums[j], j);
